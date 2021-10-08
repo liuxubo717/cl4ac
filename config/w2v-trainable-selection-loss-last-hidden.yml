@@ -1,0 +1,40 @@
+experiment:
+  name: 'w2v-selection-loss-last-hidden'
+
+w2v:
+  enable: Yes
+  w2v_path: data/pretrained_models/word2vec/w2v.model
+  trainable: Yes
+
+encoder:
+  name: 'cnn10'
+  freeze_cnn: No
+
+decoder:
+  nhead: 4
+  nhid: 128
+  nlayers: 2
+  dropout: 0.2
+  beam_width: 2
+
+multisos:
+  enable: No
+
+auxiliary_task:
+  selection_loss: Yes
+  use_last_hidden: Yes
+
+training:
+  batch_size: 8
+  # Will reduce the weight on [PAD] a an the ...
+  # Will increase the weight caption words
+  activate_weight_on_loss:
+    enable: No
+    reduce_punc_weight: No
+    reduce_stopwords_weight: No
+
+optimizer:
+  optimizer: adam
+  lr: !!float 1e-3
+  warm_up:
+    enable: Yes

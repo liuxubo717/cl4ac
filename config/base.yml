@@ -1,0 +1,85 @@
+wave:
+  sample_rate: 44100
+  window_size: 1024
+  hop_size: 512
+  mel_bins: 64
+  fmin: 50
+  fmax: 14000
+
+encoder:
+  name: 'cnn10'
+  mixup: No
+  pretrained_model: No
+  spec_augmentation: Yes
+  nb_epochs: 30
+  encoder: 'Cnn10'
+  beam_size: 2
+  freeze_cnn: No
+  pretrain_loading: 'v1'
+
+bert:
+  bert_name: bert-base-uncased
+  bert_path: bert-base-uncased
+  freeze_bert: No
+  # will input "[MASK] [MASK] [MASK] [MASK] [MASK] [MASK]" and output "[CLS] I am HQS [SEP] [PAD]"
+  input_id_as_empty: No
+  # will override input_id_as_empty
+  # Input is "[CLS] I am HQS [SEP] [PAD]", output is "I am HQS [SEP] [PAD] [PAD]"
+  input_id_all_not_empty: No
+  # In this mode, BERT will be only used as feature extractor for token by token
+  # a b c -> [embed(a),embed(b),embed(c)] NOT embed([a,b,c])
+  # This mode requires input_id_all_not_empty
+  use_token_level_embedding: No
+  # Will use [SEP] instead of [MASK], Only available in non-autoregressive
+  use_sep_as_pad: No
+  use_custom_tokenizer: No
+  auto_regressive: No
+  auto_regressive_gamma: 1
+
+
+decoder:
+  nhead: 4
+  nhid: 128
+  nlayers: 8
+  dropout: 0.1
+  max_length: 35
+
+optimizer:
+  optimizer: adam
+  lr: !!float 1e-3
+  bert_lr: !!float 1e-5
+  warm_up:
+    enable: No
+
+criteria:
+  loss: cross_entropy
+
+training:
+  epoch: 30
+  seed: 36
+  grad_clip: 2.0
+  batch_size: 4
+  beam_width: 2
+  # Will reduce the weight on [PAD] a an the ...
+  # Will increase the weight caption words
+  activate_weight_on_loss:
+    enable: Yes
+    reduce_punc_weight: No
+    reduce_stopwords_weight: No
+
+dataset:
+  audio_h5_path: 'data/logspectrogram/log_melspectrogram.h5'
+  wave_name_path: 'data/logspectrogram/wav_names.p'
+
+w2v:
+  enable: No
+  w2v_path: data/pretrained_models/word2vec/w2v.model
+  trainable: No
+  random_init: No
+
+multisos:
+  enable: No
+
+auxiliary_task:
+  selection_loss: No
+  use_last_hidden: No

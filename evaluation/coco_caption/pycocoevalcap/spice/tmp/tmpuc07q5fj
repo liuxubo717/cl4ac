@@ -1,0 +1,101 @@
+[
+  {
+    "image_id": 0,
+    "test": "",
+    "refs": [
+      "several barnyard animals mooing in a barn while it rains outside",
+      "the vocalization of several whales along with the clicking of large numbers of shrimp reverberated below in the water",
+      "underwater large numbers of shrimp clicking and several whales vocalizing",
+      "whales sing to one another over the flowing water in the distance",
+      "wales sing to one another with water flowing in the background"
+    ]
+  },
+  {
+    "image_id": 1,
+    "test": "",
+    "refs": [
+      "as thunder claps far in the distance the rain pours down",
+      "rain pours down and thunder claps far in the distance",
+      "substantial rain and wind are pouring and spouting around and thunder is available",
+      "the rain falls down the thunder is rumbling as someone is pounding and a car passes",
+      "the rain falls down while someone is pounding a car passes by and the thunder is rumbling"
+    ]
+  },
+  {
+    "image_id": 2,
+    "test": "",
+    "refs": [
+      "a muddled noise of broken channel of the tv",
+      "a television blares the rhythm of a static tv",
+      "loud television static dips in and out of focus",
+      "the loud buzz of static constantly changes pitch and volume",
+      "heavy static and the beginnings of a signal on a transistor radio"
+    ]
+  },
+  {
+    "image_id": 3,
+    "test": "",
+    "refs": [
+      "a paper printer is printing off multiple pages",
+      "a printer printing off multiple pages of paper",
+      "a small printing device performing duties and printing pages of text",
+      "a tiny printer performs its duties and prints the words",
+      "an automatic cutter feeds paper and cuts it"
+    ]
+  },
+  {
+    "image_id": 4,
+    "test": "",
+    "refs": [
+      "a person is turning a map over and over",
+      "a person is very carefully rapping a gift for someone else",
+      "a person is very carefully wrapping a gift for someone else",
+      "he sighed as he turned the pages of the book stopping to scan the information",
+      "papers are being turned stopped then turned again and someone is breathing"
+    ]
+  },
+  {
+    "image_id": 5,
+    "test": "",
+    "refs": [
+      "an office chair is squeaking as someone bends back and forth in it",
+      "popping and squeaking gradually tapers off to a low level",
+      "someone is opening a creaky door slowly while a dog barks in the background",
+      "squeaking and popping followed by gradual popping and tapering off",
+      "an office chair is squeaking as someone leans forward and backward in it"
+    ]
+  },
+  {
+    "image_id": 6,
+    "test": "",
+    "refs": [
+      "a flying bee is buzzing loudly around an object and its wing hits it",
+      "an annoying fly is buzzing loudly and consistently",
+      "an insect buzzing in the foreground as birds chirp in the background",
+      "an insect trapped in a spider web struggles breaks free and flies away",
+      "outdoors insect trapped in a spider web and then breaks loose and flies away"
+    ]
+  },
+  {
+    "image_id": 7,
+    "test": "",
+    "refs": [
+      "something goes round that is playing its song",
+      "at the fair music is playing near a carousel through the speaker",
+      "chiming of bells whistles and horns at a performance",
+      "fair kind music is being played at the circus grounds",
+      "polka or fair kind of music is being played"
+    ]
+  },
+  {
+    "image_id": 8,
+    "test": "",
+    "refs": [
+      "a bow playing a stringed instrument in a one note tone repeatedly before violins join to create the melody",
+      "a low stringed instrument drones a steady tone and is eventually joined by violins",
+      "a large stringed instrument and a pair of violins are playing",
+      "a musical instrument creates a tune and is followed by other instruments",
+      "an orchestra practicing for an upcoming concert in an enclosed room"
+    ]
+  }
+]
